@@ -1,0 +1,30 @@
+{
+  "name": "logseq-plugin-done-time",
+  "version": "0.0.1",
+  "description": "Adds a timestamp property to a task when it's marked as DONE",
+  "targets": {
+    "main": false
+  },
+  "default": "dist/index.html",
+  "author": "Menno Finlay-Smits <hello@menno.io>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./index.html --public-url ./",
+    "build": "rm -rf dist && mkdir dist && parcel build --public-url . --no-source-maps index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "logseq": {
+    "main": "dist/index.html",
+    "title": "DONE time",
+    "id": "_zqqyauglz",
+    "icon": "icon.png"
+  },
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "@logseq/libs": "^0.0.10",
+    "dayjs": "^1.11.6"
+  }
+}
