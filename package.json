@@ -19,7 +19,7 @@
   "logseq": {
     "main": "dist/index.html",
     "title": "DONE time",
-    "id": "_zqqyauglz",
+    "id": "io_menno_done_time_zqqyauglz",
     "icon": "icon.png"
   },
   "packageManager": "yarn@3.2.4",
