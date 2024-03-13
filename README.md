@@ -1,14 +1,16 @@
 # [Logseq](https://logseq.com) done time plugin
 
-This Logseq plugin adds a property to task blocks when they are marked as done.
-This can be used for creating reports for tasks done yesterday, last week etc.
+This simple Logseq plugin adds a property to task blocks when they are marked
+as done. This can be used for creating reports for tasks done yesterday, last
+week etc.
 
 Look for "done time" in the Logseq Marketplace.
 
 ## Features
 
-* Adds a "done-ms" property to tasks when they are marked as DONE.
+* Adds a `done-ms` property to tasks when they are marked as DONE.
 * This property is in milliseconds to support sorting and precise filtering in queries.
+* The property is removed if a task's state changes from DONE to anything else.
 
 ## Example queries
 
@@ -49,13 +51,25 @@ Look for "done time" in the Logseq Marketplace.
 }
 ```
 
+## Tips
+
+The `done-ms` property isn't particularly nice to look at so I recommend hiding it using the `:block-hidden-properties` option in your `config.edn`.
+
+For example:
+
+```edn
+  ::block-hidden-properties #{:done-ms}
+```
+
+Alternatively, the [Awesome Props](https://github.com/yoyurec/logseq-awesome-props) plugin can be used to hide the property from view mode but still allow it be seen when editing.
+
 ## Credit
 
 This plugin in heavily inspired by the
 [Task completion plugin](https://github.com/DimitryDushkin/logseq-plugin-task-check-date)
 by [DimitryDushkin](https://github.com/DimitryDushkin), and the
 [DONE task property plugin](https://github.com/YU000jp/logseq-plugin-confirmation-done-task)
-by [YU000jp](https://github.com/YU000jp). 
+by [YU000jp](https://github.com/YU000jp).
 
 
 ## How to release
