@@ -61,7 +61,7 @@ For example:
   ::block-hidden-properties #{:done-ms}
 ```
 
-Alternatively, the [Awesome Props](https://github.com/yoyurec/logseq-awesome-props) plugin can be used to hide the property from view mode but still allow it be seen when editing.
+Alternatively, the [Awesome Props](https://github.com/yoyurec/logseq-awesome-props) plugin can be used to hide the property from view mode while still allowing it to be seen when editing.
 
 ## Credit
 
