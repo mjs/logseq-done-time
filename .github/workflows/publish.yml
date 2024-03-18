@@ -22,10 +22,8 @@ jobs:
       - uses: montudor/action-zip@v1
         with:
           args: zip -qq -r logseq-done-time.zip dist README.md package.json LICENSE icon.png
-      - uses: marvinpinto/action-automatic-releases@latest
+      - uses: softprops/action-gh-release@v2
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
           files: |
             package.json
             *.zip
