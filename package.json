@@ -1,6 +1,6 @@
 {
   "name": "logseq-plugin-done-time",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Adds a timestamp property to a task when it's marked as DONE",
   "targets": {
     "main": false
